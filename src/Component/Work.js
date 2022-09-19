@@ -91,7 +91,7 @@ const Work = () => {
 
     return (
         <div className='lg:mx-96 my-14'>
-            <div className='lg:mx-36'>
+            <div className=''>
                 <div>
                     <h1 className='font-bold text-2xl mb-8 '>Work experience</h1>
                 </div>
@@ -131,12 +131,13 @@ const Work = () => {
                 <div className='grid grid-cols-2 items-center mt-5' >
                     <div className='flex '> <input type="checkbox" className="checkbox-info mr-3" />
                         <p> I'm currently employed here </p></div>
-                    <div className=' flex justify-end'>
-                        <button onClick={handleNewItems} className="btn btn-sm btn-info">
+                    <div className=' flex justify-end '>
+                        <button onClick={handleNewItems} className="btn btn-sm btn-info ">
                             <img className='mr-2' src={add} alt="" />
                             <h1 className='font-bold text-white '>Add</h1></button>
                     </div>
                 </div>
+
                 {/* first part end */}
                 <div>
                     <h1 className='font-bold text-2xl my-16 '>Upload Photo</h1>
@@ -145,13 +146,13 @@ const Work = () => {
                     <div className="avatar">
                         <div className="w-24 rounded bg-base-200">
 
-                            {selectedFile && <img src={preview} alt=""/>}
+                            {selectedFile && <img src={preview} alt="" />}
                         </div>
                     </div>
                     <div className='ml-8'>
                         <label class="block">
                             <span class="stone-50"></span>
-                            <input type="file" onChange={onSelectFile} 
+                            <input type="file" onChange={onSelectFile}
                                 className="block w-full text-sm text-stone-50 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-gray-800 file:text-stone-50 " />
                         </label>
                     </div>
@@ -168,7 +169,7 @@ const Work = () => {
                         <img src={linkedin} alt="" />
                     </div>
                     <p className='text-center'>
-                    <small>© 2022 Driip.All rights reserved</small>
+                        <small>© 2022 Driip.All rights reserved</small>
                     </p>
                 </div>
             </div>
